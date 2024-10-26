@@ -1,0 +1,20 @@
+// EOF - end of line
+#define[syntax] EOF ;
+// WTC - write to console
+#define[function] WTC print
+// DLA - direct language access
+#define[keyword] DLA rust
+// PEP - program entry point
+#define[keyword] PEP main
+
+main {
+   WTC("hello from WTC");
+    print("hello from WTC too");
+    // test comment inside wilt
+    rust {
+        // test comment inside rust
+        let mut var = 0;
+        var += 1;
+        println!("hello from rust!{}");
+    };
+}
